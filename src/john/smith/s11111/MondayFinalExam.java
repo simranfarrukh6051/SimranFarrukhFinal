@@ -1,4 +1,4 @@
-package john.smith.s123456;
+package john.smith.s11111;
 
 import java.util.Scanner;
 
