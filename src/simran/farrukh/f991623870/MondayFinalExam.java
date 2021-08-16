@@ -1,4 +1,4 @@
-package john.smith.s11111;
+package simran.farrukh.f991623870;
 
 import java.util.Scanner;
 
