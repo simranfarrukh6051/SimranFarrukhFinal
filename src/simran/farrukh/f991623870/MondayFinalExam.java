@@ -22,7 +22,7 @@ public class MondayFinalExam {
 
         // if you see code below means you are on monday branch
         // 1. Ask the user whether tax meant for personal or business
-        System.out.println("Please enter the tax for Personal or Business ");
+        System.out.println("Please enter the tax for taxing type ");
         Scanner scanner1 = new Scanner(System.in);
         String type = scanner1.nextLine();
 
@@ -37,10 +37,13 @@ public class MondayFinalExam {
         if (type.equals(NewEnum.PERSONAL.getEnum())) {
             tax = calculateTaxForPerson(income);
             System.out.println("Your personal income tax is: $ " + tax);
-        } else {
+        } else if (type.equals(NewEnum.BUSINESS.getEnum())){
             tax = calculateTaxForBusiness(income);
             System.out.println("Your business income tax is: $ " + tax);
-        }
+        } else{
+                tax = calculateTaxForFamilyTax(income);
+            System.out.println("Your family tax income tax is: $ " + tax);
+                }
 
     }
 
@@ -61,6 +64,17 @@ public class MondayFinalExam {
             return income * 0.10;
         } else {
             return income * 0.15;
+        }
+
+    }
+    
+    static double calculateTaxForFamilyTax(double income) {
+        if (income < 80000.00) {
+            return income * 0.08;
+        } else if (income >= 80000 && income < 120000) {
+            return income * 0.23;
+        } else {
+            return income * 0.37;
         }
 
     }

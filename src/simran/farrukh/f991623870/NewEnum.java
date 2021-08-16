@@ -10,7 +10,7 @@ package simran.farrukh.f991623870;
  * @author Simran
  */
 public enum NewEnum {
-    PERSONAL("P"), BUSINESS("B");
+    PERSONAL("P"), BUSINESS("B"), FAMILY("F");
     
     private String enums;
     
