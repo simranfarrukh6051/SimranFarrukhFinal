@@ -1,6 +1,7 @@
 package simran.farrukh.f991623870;
 
 import java.util.Scanner;
+import simran.farrukh.f991623870.NewEnum;
 
 /**
  * Calculate taxes paid per the income
@@ -33,7 +34,7 @@ public class MondayFinalExam {
         //  display the tax rate the person / business should pay
         System.out.println("The tax you have to pay is:");
         double tax = 0;
-        if (type.equals("Personal")) {
+        if (type.equals(NewEnum.PERSONAL.getEnum())) {
             tax = calculateTaxForPerson(income);
             System.out.println("Your personal income tax is: $ " + tax);
         } else {
