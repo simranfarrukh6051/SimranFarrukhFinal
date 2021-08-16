@@ -1,5 +1,6 @@
+# Simran Farrukh
 
-# Final Exam
+## Final Exam
 
 Final Exam for SYST 17796 Software Design
 ## Objectives

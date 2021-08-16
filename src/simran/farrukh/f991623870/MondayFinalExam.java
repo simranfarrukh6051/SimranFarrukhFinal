@@ -6,8 +6,9 @@ import java.util.Scanner;
  * Calculate taxes paid per the income
  *
  * @author Haki
- * @modified ?
- * @date ?
+ * @author Simran
+ * @modified 991623870
+ * @date 8/16/2021
  */
 public class MondayFinalExam {
 
