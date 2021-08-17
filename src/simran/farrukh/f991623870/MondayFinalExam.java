@@ -34,6 +34,7 @@ public class MondayFinalExam {
         //  display the tax rate the person / business should pay
         System.out.println("The tax you have to pay is:");
         double tax = 0;
+        
         if (type.equals(NewEnum.PERSONAL.getEnum())) {
             tax = calculateTaxForPerson(income);
             System.out.println("Your personal income tax is: $ " + tax);
@@ -44,9 +45,8 @@ public class MondayFinalExam {
                 tax = calculateTaxForFamilyTax(income);
             System.out.println("Your family tax income tax is: $ " + tax);
                 }
-
     }
-
+    
     static double calculateTaxForPerson(double income) {
         if (income < 50000.00) {
             return income * 0.10;
@@ -78,5 +78,4 @@ public class MondayFinalExam {
         }
 
     }
-
 }
