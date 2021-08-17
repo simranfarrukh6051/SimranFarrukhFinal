@@ -48,7 +48,9 @@ public class MondayFinalExam {
     }
     
     static double calculateTaxForPerson(double income) {
-        if (income < 50000.00) {
+        if (income< 0 || income >1000000000)
+        {throw new ArithmeticException("Invalid Income");}
+        else if (income < 50000.00) {
             return income * 0.10;
         } else if (income >= 50000 && income < 100000) {
             return income * 0.30;
